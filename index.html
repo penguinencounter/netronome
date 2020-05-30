@@ -12,5 +12,14 @@
         <link rel="shortcut icon" href="/static/favicon.ico">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="/static/browserconfig.xml">
+
+
+        <script src="scripts/metronome.js"></script>
     </head>
+    <body onload="console.log('Page load');loadEvent();">
+        <audio src="static/250552__druminfected__metronome.wav" type="audio/wav" id="metronome-click"></audio>
+        <button data-playing="false" role="switch" aria-checked="false" id="play">
+            <span>Start/Stop</span>
+        </button>
+    </body>
 </html>
